@@ -58,7 +58,4 @@ def print_estimation_result(dat_e_a: pd.DataFrame):
   print("topk: " + str(topk))
   return [recall,precision,topk]
 
-dat_result.iat[0,0] = 835
-print(dat_result.head())
-print_estimation_result(dat_result)
 
