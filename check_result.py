@@ -15,7 +15,7 @@ def check_result(dat_e : pd.DataFrame, target_team_id : str) -> pd.DataFrame:
   '''
 
   ## 正解の読み込み
-  ea_file = "./PWSCUP2021_attack/Share/pre_attack_result/Team03_E_Ea_X/EA/pre_anony_03_for_03_ea.csv"
+  ea_file = "./PWSCUP2021_attack/Share/pre_attack_result/Team03_E_Ea_X/EA/pre_anony_" + target_team_id + "_for_03_ea.csv"
   dat_ea = pd.read_csv(ea_file, header = None)
 
 
