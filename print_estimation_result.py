@@ -42,6 +42,9 @@ def print_estimation_result(dat_e_a: pd.DataFrame):
     if dat_e_a.iat[row,3] != -1:
       topk_member += 1;
       s = set(dat_e_a.iloc[row, 0:3])
+      ## debug
+      if row == 0:
+        print(s)
       if dat_e_a.iat[row,3] in s:
         topk_member_estimated += 1
 
