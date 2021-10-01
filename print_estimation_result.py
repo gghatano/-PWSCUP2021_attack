@@ -41,7 +41,7 @@ def print_estimation_result(dat_e_a: pd.DataFrame):
     ## EAが-1でない行の中で、E1E2E3で推定が成功しているものの割合
     if dat_e_a.iat[row,3] != -1:
       topk_member += 1;
-      s = set(dat_e_a.iloc[row, 0:2])
+      s = set(dat_e_a.iloc[row, 0:3])
       if dat_e_a.iat[row,3] in s:
         topk_member_estimated += 1
 
