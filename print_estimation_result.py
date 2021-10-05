@@ -59,6 +59,6 @@ def print_estimation_result(dat_e_a: pd.DataFrame):
   print("----- attack result end ------")
   print("")
 
-  return [recall,precision,topk]
+  return [recall,precision,topk,recall*precision*topk]
 
 
